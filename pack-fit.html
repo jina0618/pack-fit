@@ -1,105 +1,410 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>패킹핏</title>
-    <link rel="stylesheet" href="./pack-fit.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>패킹핏</title>
+  <link rel="stylesheet" href="./pack-fit.css">
 </head>
 <body>
 
-<!--잡화문구-->
-    <header>
-     <p>로그인 회원가입</p> 
-     </header>
-     
-<div class="warp">
-    <h2>패킹핏</h2>
-    <p class="sub">TRAVEL WARDROBE ALGORITHM</p>
-    <h1>"옷은 반으로 줄이고,<br/>
-    매일의 코디는 새롭게"</h1>
-    <p class="desc">날씨와 세탁 일정만 확인하세요. 캐리어 용량에 맞춰 최적의 돌려입기 조합을 추천해드립니다.</p>
+  <div class="layout-container">
 
-    <!--카드 첫줄 정보-->
-    <div class="left">
-    <div class="card">
-    <div class="row1">
-    <p>도쿄 3박 4일</p>
-    <p>일반 패킹</p>
-    <p>옷 8벌 필요</p>
-    <p>캐리어 95%</p>
-    </div>
+    <!-- 1구역: 좌측 소개 영역 -->
+    <section class="left-section">
+      <div class="logo">
+        <span class="icon"><img src="Vector.png" alt="로고"></span>
+        <span class="brand-name">패킹핏</span>
+      </div>
 
-    <!--카드 둘째줄 정보-->
-    <div class="row2">
-    <p>기온 19°C</p>
-    </div>
+      <div class="hero-text">
+        <p class="sub-title">TRAVEL WARDROBE ALGORITHM</p>
+        <h1>“옷은 반으로 줄이고,<br>매일의 코디는 새롭게.” 👕</h1>
+        <p class="description">
+          날씨와 세탁 일정만 체크하세요.<br>
+          캐리어 용량에 맞춰 최적의 돌려입기 조합을 계산해 드립니다.
+        </p>
+      </div>
 
-    <div class="row2.5">
-    <p>-></p>
-    </div>
-   
+      <div class="card-wrap">
+        <div class="card">
+          <div class="card-tags">
+            <span class="tag">도쿄 3박 4일</span>
+            <span class="tag">기온 19°C</span>
+            <span class="tag check">세탁 체크됨 ✓</span>
+          </div>
 
-    <!--카드 마지막줄 정보-->
-    <div class="row3">
-    <p>세탁 체크됨</p>
-    <p>패킹핏 최적화</p>
-    <p>상의3+하의2</p>
-    <p>여유 58% 달성</p>
-    </div>
-    </div>
+          <div class="card-compare">
+            <div class="pack-normal">
+              <span class="label">일반 패킹</span>
+              <p class="bold">옷 8벌 필요</p>
+              <span class="sub-label">캐리어 95%</span>
+            </div>
 
-    <!--카드 맨 하단 문구-->
-    <div class="final">
-    <p>세탁 스케줄 반영으로 불필요한 옷 세벌을 뺐어요!</p>
-    </div>
-    <!--다운로드 타이틀 큐알코드는 img로 나중에-->
-    <div class="down">
-    <h3>지금 바로 다운받으세요</h3>
-    </div>
-    
+            <div class="arrow">⇨</div>
 
-    <!--앱 스토어 텍스트-->
-    <div class="down-box">
-    <div class="down-but">
-    <p>Goolgle Play</p>
-    <p>App Store</p>
-    <div class="qr">
-        <img src="./QR Code.png" alt="QR">
-    </div>
- </div>   
-</div>
-    </div>
+            <div class="pack-fit">
+              <span class="fit-tag">패킹핏 최적화</span>
+              <p class="bold">상의3+하의2</p>
+              <span class="highlight">여유 58% 달성</span>
+            </div>
+          </div>
+        </div>
 
-    <!--스마트폰 상단 로고-->
-    <div class="phone">
-    <div class="phone-top">
-    <h3>패킹핏</h3>
-    </div>
+        <p class="card-footer-text">
+          <span>🤭</span> 세탁 스케줄 반영으로 불필요한 옷 3벌을 뺐어요!
+        </p>
+      </div>
 
-    <!--스마트폰 중앙 문구-->
-    <div class="phone-mid">
-    <h2>새 여행을 시작해볼까요?</h2>
-    <p>목적지, 날짜만 알려주시면 돼요</p>
-    <button>시작하기↗</button>
-    
+      <div class="download-wrap">
+        <h3>지금 바로 다운받으세요</h3>
+        <div class="download-content">
+          <div class="store-buttons">
+            <button type="button" class="btn-store">
+              <span class="icon">▶</span>
+              <span>Google Play</span>
+            </button>
+            <button type="button" class="btn-store">
+              <span class="icon"></span>
+              <span>App Store</span>
+            </button>
+          </div>
+          <div class="qr-box">
+            <img src="./QR Code.png" alt="QR코드">
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!--하단 팁 안내 문구-->
-    <p>옷장이 비어있어도 괜찮아요 여행 정보만 입력하면 몇 벌이 필요한지부터 계산해드려요</p>
-    </div>
+    <!-- 2구역: 스마트폰 목업 (5개 화면 순환 슬라이더) -->
+    <section class="phone-section">
+      <div class="phone-screen-slider">
+        <div class="slide-track">
 
-    
-    <!--맨 밑 네비게이션 앱-->
-    <div class="phone-bottom">
-    <p>홈</p>
-    <p>옷장</p>
-    <p>여행</p>
-    <p>기록</p>
-    </div>
-    </div>
- 
-    
-     <div class="cs-bt">고객센터</div> 
-     
+          <!-- 1번 화면: 홈 화면 -->
+          <div class="phone-page first-page">
+            <div class="phone-header">
+              <div class="phone-logo">
+                <img src="Vector.png" alt="로고">
+                <span>패킹핏</span>
+              </div>
+              <span class="user-icon">👤</span>
+            </div>
+
+            <div class="phone-body">
+              <div class="plane-icon"><img src="Vector.png" alt="아이콘"></div>
+              <h2>새 여행을 시작해볼까요?</h2>
+              <p>목적지, 날짜만 알려주시면 돼요</p>
+              <button type="button" class="btn-start">시작하기 ↗</button>
+            </div>
+
+            <div class="phone-footer">
+              <p class="tip-text">
+                💡 옷장이 비어있어도 괜찮아요 여행 정보만 입력하면 몇 벌이 필요한지부터 계산해드려요
+              </p>
+              <nav class="tab-bar">
+                <div class="tab-item active"><span>🏠</span>홈</div>
+                <div class="tab-item"><span>👗</span>옷장</div>
+                <div class="tab-item"><span>📅</span>여행</div>
+                <div class="tab-item"><span>🕒</span>기록</div>
+              </nav>
+            </div>
+          </div>
+
+          <!-- 2번 화면: 여행 정보 입력 (1/3) -->
+          <div class="phone-page second-page">
+            <div class="step-header">
+              <div class="step-title-wrap">
+                <span class="back-arrow">←</span>
+                <span class="step-title">여행 정보 입력</span>
+                <span class="step-count">1/3</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill step-1"></div>
+              </div>
+            </div>
+
+            <div class="step-content">
+              <div class="form-group">
+                <label>목적지</label>
+                <div class="input-box">
+                  <span class="input-icon">📍</span>
+                  <input type="text" placeholder="어디로 가시나요?" readonly>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>여행 날짜</label>
+                <div class="date-group">
+                  <div class="input-box">
+                    <span class="input-icon">📅</span>
+                    <input type="text" placeholder="시작일" readonly>
+                  </div>
+                  <div class="input-box">
+                    <span class="input-icon">📅</span>
+                    <input type="text" placeholder="종료일" readonly>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>일정 유형</label>
+                <div class="type-buttons">
+                  <button type="button" class="btn-type active">출장</button>
+                  <button type="button" class="btn-type">관광</button>
+                  <button type="button" class="btn-type">혼합</button>
+                </div>
+              </div>
+
+              <div class="weather-banner">
+                <span class="weather-icon">☁️</span>
+                <div class="weather-text">
+                  <strong>도쿄, 평균 19°C</strong>
+                  <span>얇은 겉옷 하나면 충분해요</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-bottom">
+              <button type="button" class="btn-next">다음 →</button>
+            </div>
+          </div>
+
+          <!-- 3번 화면: 짐 조건 입력 (2/3) -->
+          <div class="phone-page third-page">
+            <div class="step-header">
+              <div class="step-title-wrap">
+                <span class="back-arrow">←</span>
+                <span class="step-title">짐 조건 입력</span>
+                <span class="step-count">2/3</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill step-2"></div>
+              </div>
+            </div>
+
+            <div class="step-content-luggage">
+              <label class="section-label">캐리어 크기</label>
+              
+              <div class="luggage-list">
+                <div class="luggage-card active">
+                  <span class="luggage-icon">🛍️</span>
+                  <div class="luggage-info">
+                    <strong>기내용</strong>
+                    <span>20~25L, 저가 항공도 무료</span>
+                  </div>
+                </div>
+
+                <div class="luggage-card">
+                  <span class="luggage-icon">🛍️</span>
+                  <div class="luggage-info">
+                    <strong>위탁 (중형)</strong>
+                    <span>55L~65L</span>
+                  </div>
+                </div>
+
+                <div class="luggage-card">
+                  <span class="luggage-icon">🛍️</span>
+                  <div class="luggage-info">
+                    <strong>위탁 (대형)</strong>
+                    <span>75L 이상</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="laundry-toggle-row">
+                <div class="laundry-label">
+                  <span class="laundry-icon">🧺</span>
+                  <span>숙소에서 세탁 가능해요</span>
+                </div>
+                <div class="switch-toggle on">
+                  <span class="switch-circle"></span>
+                </div>
+              </div>
+
+              <div class="divider-line"></div>
+
+              <div class="laundry-date-select">
+                <span class="laundry-sub-label">며칠째에 세탁할 예정인가요?</span>
+                <div class="day-buttons">
+                  <button type="button" class="btn-day">2일차</button>
+                  <button type="button" class="btn-day active">3일차</button>
+                  <button type="button" class="btn-day">4일차</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-bottom">
+              <button type="button" class="btn-next">다음 →</button>
+            </div>
+          </div>
+
+          <!-- 4번 화면: 옷 등록 (3/3) -->
+          <div class="phone-page fourth-page">
+            <div class="step-header">
+              <div class="step-title-wrap">
+                <span class="back-arrow">←</span>
+                <span class="step-title">옷 등록</span>
+                <span class="step-count">3/3</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill step-3"></div>
+              </div>
+            </div>
+
+            <p class="cloth-sub-desc">이번 여행에 들고 갈 옷을 등록해주세요. 개수만 알려주셔도 계산할 수 있어요.</p>
+
+            <div class="reg-mode-tabs">
+              <button type="button" class="mode-tab active">개수로 입력</button>
+              <button type="button" class="mode-tab">사진으로 등록</button>
+            </div>
+
+            <div class="cloth-counter-list">
+              <div class="counter-item">
+                <div class="item-meta">
+                  <span class="cloth-icon">👕</span>
+                  <span class="cloth-name">상의</span>
+                </div>
+                <div class="counter-control">
+                  <button type="button" class="btn-circle">-</button>
+                  <span class="count-num">3</span>
+                  <button type="button" class="btn-circle dark">+</button>
+                </div>
+              </div>
+
+              <div class="counter-item">
+                <div class="item-meta">
+                  <span class="cloth-icon">👖</span>
+                  <span class="cloth-name">하의</span>
+                </div>
+                <div class="counter-control">
+                  <button type="button" class="btn-circle">-</button>
+                  <span class="count-num">2</span>
+                  <button type="button" class="btn-circle dark">+</button>
+                </div>
+              </div>
+
+              <div class="counter-item">
+                <div class="item-meta">
+                  <span class="cloth-icon">🧥</span>
+                  <span class="cloth-name">아우터</span>
+                </div>
+                <div class="counter-control">
+                  <button type="button" class="btn-circle">-</button>
+                  <span class="count-num">1</span>
+                  <button type="button" class="btn-circle dark">+</button>
+                </div>
+              </div>
+
+              <div class="counter-item">
+                <div class="item-meta">
+                  <span class="cloth-icon">👟</span>
+                  <span class="cloth-name">신발</span>
+                </div>
+                <div class="counter-control">
+                  <button type="button" class="btn-circle">-</button>
+                  <span class="count-num">1</span>
+                  <button type="button" class="btn-circle dark">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cloth-total-tip">
+              <span>💡</span>
+              <p>총 7벌 등록했어요. 3박 4일엔 충분한 양이에요.</p>
+            </div>
+
+            <div class="step-bottom">
+              <button type="button" class="btn-next">조합 계산하기</button>
+            </div>
+          </div>
+
+          <!-- 5번 화면: 조합 결과 -->
+          <div class="phone-page fifth-page">
+            <div class="step-header">
+              <div class="step-title-wrap">
+                <span class="back-arrow">←</span>
+                <span class="step-title">조합 결과</span>
+              </div>
+            </div>
+
+            <div class="result-summary-card">
+              <span class="summary-sub">도쿄 · 3박4일</span>
+              <h3 class="summary-title">7벌로 6가지 코디</h3>
+              <div class="summary-stats">
+                <div class="stat-col">
+                  <span class="stat-lbl">캐리어 여유</span>
+                  <strong>58%</strong>
+                </div>
+                <div class="stat-col">
+                  <span class="stat-lbl">등록 옷</span>
+                  <strong>상의·하의</strong>
+                </div>
+                <div class="stat-col">
+                  <span class="stat-lbl">세탁</span>
+                  <strong class="green-txt">3일차✓</strong>
+                </div>
+              </div>
+            </div>
+
+            <p class="result-notice">📦 세탁 스케줄 반영으로 불필요한 옷 3벌을 뺐어요!</p>
+
+            <span class="timeline-title">날짜별 코디</span>
+
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <span class="day-badge">Day1</span>
+                <div class="coordi-desc">
+                  <strong>셔츠A + 슬랙스A</strong>
+                  <span>낮 미팅 · 재킷 포함</span>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="day-badge">Day2</span>
+                <div class="coordi-desc">
+                  <strong>셔츠B + 슬랙스B</strong>
+                  <span>낮 미팅 · 저녁 약속</span>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="day-badge">Day3</span>
+                <div class="coordi-desc">
+                  <strong>셔츠A + 슬랙스B</strong>
+                  <span>세탁일 · 가벼운 코디</span>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="day-badge">Day4</span>
+                <div class="coordi-desc">
+                  <strong>셔츠C + 슬랙스A</strong>
+                  <span>귀국일 · 편한 코디</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-bottom">
+              <button type="button" class="btn-next">캘린더에 배정하기</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3구역: 우측 메뉴 -->
+    <aside class="right-menu">
+      <div class="auth-links">
+        <a href="#">로그인</a>
+        <span>|</span>
+        <a href="#">회원가입</a>
+      </div>
+      <button type="button" class="btn-cs">고객센터</button>
+    </aside>
+
+  </div>
+
 </body>
 </html>
